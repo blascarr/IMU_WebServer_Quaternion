@@ -1,7 +1,7 @@
 
 # IMU_WebServer_Quaternion
 
-Test for Inertial Measurement Units MPU6050 for robotic applications with Webserver. Testing Accuracy in reading and Filtering applying Roll Pitch Yaw Or Quaternion visualization in order to visualize best method and results and avoid [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock) effects.
+Test for Inertial Measurement Units **MPU6050** for robotic applications with Webserver. Testing Accuracy in reading and Filtering applying Roll Pitch Yaw Or **Quaternion** in order to visualize best method and results and avoid [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock) effects.
 
 ## Quaternion Solution
 
@@ -17,11 +17,10 @@ Roll Pitch Yaw – No Quaternion Applied
 
 ## MPU6050
 
-This giroscope and accelerometer module is needed in order to obtain ( accX, accY, accZ ) ( gyroX, gyroY, gyroZ ) and 
+This giroscope and accelerometer module is needed in order to obtain **( accX, accY, accZ ) ( gyroX, gyroY, gyroZ )**.
 
 ![src/img/GY-521.jpg](src/img/GY-521.jpg)
 
-## Library For MPU6050
 
 ## IMU Connection ESP32 with Interruption
 

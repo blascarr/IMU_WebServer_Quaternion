@@ -1,22 +1,17 @@
-# IMU_WebServer_Quaternion
-Test for Inertial Measurement Units MPU6050 for robotic applications with Webserver. Testing Accuracy in reading and Filtering applying Roll Pitch Yaw Or Quaternion visualization in order to visualize best method and results.
-
 
 # IMU_WebServer_Quaternion
 
-Test for Inertial Measurement Units MPU6050 for robotic applications with Webserver. Testing Accuracy in reading and Filtering applying Roll Pitch Yaw Or Quaternion visualization in order to visualize best method and results.
+Test for Inertial Measurement Units MPU6050 for robotic applications with Webserver. Testing Accuracy in reading and Filtering applying Roll Pitch Yaw Or Quaternion visualization in order to visualize best method and results and avoid [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock) effects.
 
 ## Quaternion Solution
-
-[Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock)  
 
 ![src/img/QuaternionVisualization.gif](src/img/QuaternionVisualization.gif)
 
 Quaternion Solution
 
-## Gimbal Lock
+## Gimbal Lock with RPY readings
 
-![https://zaragozamakerspace.com/wp-content/uploads/2021/02/RPYVisualization.gif](https://zaragozamakerspace.com/wp-content/uploads/2021/02/RPYVisualization.gif)
+![src/img/RPYVisualization.gif](src/img/RPYVisualization.gif)
 
 Roll Pitch Yaw – No Quaternion Applied
 

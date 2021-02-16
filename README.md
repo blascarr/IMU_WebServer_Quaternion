@@ -10,7 +10,7 @@ Test for Inertial Measurement Units MPU6050 for robotic applications with Webser
 
 [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock)  
 
-![https://zaragozamakerspace.com/wp-content/uploads/2021/02/QuaternionVisualization.gif](https://zaragozamakerspace.com/wp-content/uploads/2021/02/QuaternionVisualization.gif)
+![src/img/QuaternionVisualization.gif](QuaternionVisualization.gif)
 
 Quaternion Solution
 
@@ -24,17 +24,17 @@ Roll Pitch Yaw – No Quaternion Applied
 
 This giroscope and accelerometer module is needed in order to obtain ( accX, accY, accZ ) ( gyroX, gyroY, gyroZ ) and 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdfc8fa6-c35f-4465-bea2-89d8353284d8/GY-521.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdfc8fa6-c35f-4465-bea2-89d8353284d8/GY-521.png)
+![src/img/GY-521.jpg](GY-521.jpg)
 
 ## Library For MPU6050
 
 ## IMU Connection ESP32 with Interruption
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d718a3-704a-45e3-b8f4-d6ba3264378c/IMUESP32_bb.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d718a3-704a-45e3-b8f4-d6ba3264378c/IMUESP32_bb.png)
+![src/img/IMUESP32_bb.png](IMUESP32_bb.png)
 
 ## IMU Connection ESP8266 without Interruption
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f24ad21-29d1-4a36-9929-c2cdcae03781/IMUESP8266_bb.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f24ad21-29d1-4a36-9929-c2cdcae03781/IMUESP8266_bb.png)
+![src/img/IMUESP8266_bb.png](IMUESP8266_bb.png)
 
 ## Links
 

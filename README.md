@@ -9,7 +9,7 @@ Test for Inertial Measurement Units **MPU6050** for robotic applications with We
 
 Quaternion Solution
 
-## Gimbal Lock with RPY readings
+## FAIL - Gimbal Lock with RPY readings
 
 ![src/img/RPYVisualization.gif](src/img/RPYVisualization.gif)
 

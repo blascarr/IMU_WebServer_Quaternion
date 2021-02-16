@@ -10,7 +10,7 @@ Test for Inertial Measurement Units MPU6050 for robotic applications with Webser
 
 [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock)  
 
-![src/img/QuaternionVisualization.gif](QuaternionVisualization.gif)
+![src/img/QuaternionVisualization.gif](src/img/QuaternionVisualization.gif)
 
 Quaternion Solution
 
@@ -24,17 +24,17 @@ Roll Pitch Yaw – No Quaternion Applied
 
 This giroscope and accelerometer module is needed in order to obtain ( accX, accY, accZ ) ( gyroX, gyroY, gyroZ ) and 
 
-![src/img/GY-521.jpg](GY-521.jpg)
+![src/img/GY-521.jpg](src/img/GY-521.jpg)
 
 ## Library For MPU6050
 
 ## IMU Connection ESP32 with Interruption
 
-![src/img/IMUESP32_bb.png](IMUESP32_bb.png)
+![src/img/IMUESP32_bb.png](src/img/IMUESP32_bb.png)
 
 ## IMU Connection ESP8266 without Interruption
 
-![src/img/IMUESP8266_bb.png](IMUESP8266_bb.png)
+![src/img/IMUESP8266_bb.png](src/img/IMUESP8266_bb.png)
 
 ## Links
 

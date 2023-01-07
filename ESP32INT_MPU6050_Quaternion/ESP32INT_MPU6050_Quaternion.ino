@@ -11,7 +11,7 @@
 
 #define INTERRUPT_PIN 23  // use pin 2 on Arduino Uno & most boards
 
-#include <Arduino_JSON.h>
+#include <ArduinoJSON.h>
 #include "webpage.h"
 
 MPU6050 mpu;

@@ -17,8 +17,8 @@ MPU6050 mpu;
 Ticker IMUTicker;
 #define SERIALDEBUG
 
-const char *ssid = "ZMS";
-const char *password = "ZM4K3RS:P";
+const char *ssid = "SSID";
+const char *password = "PASSWORD";
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);

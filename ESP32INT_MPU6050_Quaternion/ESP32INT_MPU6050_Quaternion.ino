@@ -11,11 +11,11 @@
 
 #define INTERRUPT_PIN 23  // use pin 2 on Arduino Uno & most boards
 
-#include <ArduinoJSON.h>
+#include <Arduino_JSON.h>
 #include "webpage.h"
 
 MPU6050 mpu;
-//#define SERIALDEBUG
+#define SERIALDEBUG
 
 const char *ssid = "SSID";
 const char *password = "PASSWORD";

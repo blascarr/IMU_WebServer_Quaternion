@@ -15,7 +15,7 @@
 #include "webpage.h"
 
 MPU6050 mpu;
-//#define SERIALDEBUG
+#define SERIALDEBUG
 
 const char *ssid = "SSID";
 const char *password = "PASSWORD";

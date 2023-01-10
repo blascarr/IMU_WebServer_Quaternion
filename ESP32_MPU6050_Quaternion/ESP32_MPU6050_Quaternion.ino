@@ -1,24 +1,24 @@
 #include "I2Cdev.h"
 #include "MPU6050_6Axis_MotionApps20.h"
+#include <Ticker.h>
 
 #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
     #include "Wire.h"
 #endif
 
-#include <ESP8266WiFi.h>
-#include <ESPAsyncTCP.h>
+#include <WiFi.h>
+#include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-
-//#define INTERRUPT_PIN 8 
 
 #include <Arduino_JSON.h>
 #include "webpage.h"
 
 MPU6050 mpu;
+Ticker IMUTicker;
 #define SERIALDEBUG
 
-const char *ssid = "SSID";
-const char *password = "PASSWORD";
+const char *ssid = "ZMS";
+const char *password = "ZM4K3RS:P";
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -30,8 +30,7 @@ AsyncEventSource events("/events");
 JSONVar readings;
 
 // Timer variables
-unsigned long timestamp = 0;
-unsigned long duration = 300;
+unsigned long IMU_time_interval = 40;
 
 #include "IMU_Controller.h"
 #include "WiFi_Controller.h"
@@ -40,6 +39,16 @@ unsigned long duration = 300;
 // ================================================================
 // ===                      INITIAL SETUP                       ===
 // ================================================================
+void imu_loop() {
+    if (devStatus == 0 ){
+      
+      events.send(getGyroReadings().c_str(), "gyro_readings", millis());
+      #ifdef SERIALDEBUG
+        serialReadings();
+      #endif
+    }
+
+}
 
 void setup() {
   
@@ -57,25 +66,12 @@ void setup() {
     initWiFi();
     initWebServer();
     initIMU();
+    IMUTicker.attach_ms( IMU_time_interval, imu_loop );
 }
 
 // ================================================================
 // ===                    MAIN PROGRAM LOOP                     ===
 // ================================================================
-
 void loop() {
-    // if programming failed, don't try to do anything
-    #ifdef INTERRUPT_PIN
-      if (!dmpReady) return;
-    #endif
-    
-    updateIMU();
-    
-    if (millis() - timestamp > duration) {
-      timestamp = millis();
-      events.send(getGyroReadings().c_str(), "gyro_readings", millis());
-      #ifdef SERIALDEBUG
-        serialReadings();
-      #endif
-    }
+  updateIMU();
 }
